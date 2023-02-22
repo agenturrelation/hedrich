@@ -43,7 +43,8 @@ Thumbs.db
 # Docker
 docker/.env
 docker/database/data/
-docker/logs/nginx
+docker/logs/nginx/*
+!docker/logs/nginx/.gitkeep
 docker/docker-commands.txt
 
 # Local development
