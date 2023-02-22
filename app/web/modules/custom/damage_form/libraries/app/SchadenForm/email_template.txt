@@ -1,0 +1,5 @@
+Folgende Anfrage wurde auf Ihrer WebSite erfasst:
+
+{{USER_SUBMITTED_VALUES}}
+
+Bitte setzen Sie sich mit der in der Anfrage genannten Person in Verbindung.

@@ -1,0 +1,7 @@
+app:
+  version: 1.x
+  #css:
+  #  theme:
+  #    libraries/app/SchadenForm/assets/css/style.css: {}
+  js:
+    libraries/app/SchadenForm/assets/js/app_include.js: {}

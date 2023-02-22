@@ -1,0 +1,9 @@
+name: Damage Form Module
+description: Creates a "Schaden melden" form and block".
+package: Repanet
+type: module
+version: 1.0
+core_version_requirement: 9.x
+configure: damage_form.settings
+dependencies:
+  - smtp:smtp

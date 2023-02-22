@@ -1,0 +1,27 @@
+<!-- form-request.html -->
+<fieldset>
+	<ng-include src="getTemplateUrl('app/SchadenForm/form-contact-data.part.html')"></ng-include>
+
+	<div class="form-group">
+
+		<textarea class="form-control" name="message" placeholder="Nachricht *" rows="10" ng-model="formData.request.message" required> </textarea>
+		<div class="form-validation-message"
+			 ng-messages="schadenForm.message.$error"
+			 ng-if="showValidationMessage(schadenForm.message)"
+			 ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+	</div>
+</fieldset>
+<div class="row form-actions">
+    <div class="col-xs-6 form-action-back">
+        <a ui-sref="form.selection" class="btn btn-info">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span> zurück
+        </a>
+    </div>
+
+    <div class="col-xs-6 form-action-next">
+        <button type="submit" class="btn btn-danger" ng-class="{disabled: !schadenForm.$valid}" ng-disabled="submitButtonDisabled">
+            Absenden
+            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </button>
+    </div>
+</div>

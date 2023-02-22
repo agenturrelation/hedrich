@@ -1,0 +1,186 @@
+/* ---------- Color Module Styles ----------- */
+.splide__arrows button {
+    background: #0055a4;
+    z-index: 10;
+}
+body {
+	color: #333333;
+	background: #fefefe;
+	}
+.site-footer fieldset input {
+	color: #333333;
+	}
+#page,
+#main-wrapper,
+.region-primary-menu .menu-item a.is-active,
+.region-primary-menu .menu-item--active-trail a {
+	background: #fefefe;
+	}
+.tabs ul.primary li a.is-active {
+	background-color: #fefefe;
+	}
+
+.tabs ul.primary li.is-active a {
+	background-color: #fefefe;
+	border-bottom-color: #fefefe;
+	}
+.navbar-brand {
+	background: #ffffff;
+	}
+#backtotop::before {
+	color: #ffffff;
+	}
+a,
+.link,
+.site-footer .navbar-nav a,
+.block-views-blockansprechpartner-block-1 h5,
+#schadenform-wrapper h1 {
+	color: #004493;
+	}
+#schadenform-wrapper circle,
+#schadenform-wrapper .kfz-circle {
+	fill: #76b729 !important;
+	}
+#schadenform-wrapper .active circle,
+#schadenform-wrapper .active .kfz-circle {
+	fill: #549507 !important;
+	}
+a:hover,
+a:focus,
+.link:hover,
+.link:focus,
+.site-footer .navbar-nav a:hover {
+	text-decoration: none;
+	color: #76b729;
+	}
+.dropdown-menu a.active,
+.dropdown-menu a.is-active,
+.dropdown-menu li.active > a,
+.dropdown-menu li.active > a  {
+	text-decoration: none;
+	color: #76b729 !important;
+	}
+
+a:active,
+.link:active {
+	color: #76b729;
+	}
+
+.page-item.active .page-link {
+	background-color: #0071b3;
+	border-color: #0071b3;
+	}
+.services span,
+.highlighted h2,
+.services h4,
+.site-footer__top [class^="icon-"], .site-footer__top [class*=" icon-"] {
+	color: #0055a4;
+	}
+
+.page-link,
+.page-link:hover {
+	color: #0071b3;
+	}
+#main #search-block-form, #search-form,
+.sidebar .block {
+	background-color: #eeeeee;
+	border-color: #cccccc;
+	}
+#backtotop,
+.btn-primary,
+#schadenform-wrapper .btn-danger {
+	background-color: #0055a4;
+	border-color: #0055a4;
+	}
+#backtotop:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+#schadenform-wrapper .btn-danger:hover {
+	background-color: #003382;
+	border-color: #003382;
+	}
+.btn-secondary,
+#kontaktblock .btn-primary {
+	background-color: #76b729;
+	border-color: #76b729;
+	}
+.btn-secondary:hover,
+.btn-secondary:focus,
+#kontaktblock .btn-primary:hover,
+#kontaktblock .btn-primary:focus {
+	background-color: #549507;
+	border-color: #549507;
+	}
+#schadenform-wrapper .btn-info {
+	background-color: #333333;
+	border-color: #333333;
+	}
+#header {
+	background: #0055a4;
+	}
+.site-footer {
+	background: #eaeaea;
+	}
+
+.region-header,
+.region-header a,
+.region-header li a.is-active,
+.region-header .site-branding__text,
+.region-header .site-branding,
+.region-header .site-branding__text a,
+.region-header .site-branding a,
+.region-secondary-menu .menu-item a,
+.region-secondary-menu .menu-item a.is-active {
+	color: #fffeff;
+	}
+
+.company_teaser ul li:before,
+#main-wrapper .node__content ul li:before {
+	color: #76b729;
+}
+
+/* ---------- Color Form ----------- */
+
+[dir="rtl"] .color-form .color-palette {
+	margin-left: 0;
+	margin-right: 20px;
+	}
+
+[dir="rtl"] .color-form .form-item label {
+	float: right;
+	}
+
+[dir="rtl"] .color-form .color-palette .lock {
+	right: -20px;
+	left: 0;
+	}
+
+
+#CollapsingNavbar,
+primary-background,
+#block-highlightedfront:before,
+.routenplaner,
+#kontaktblock:before,
+#schadenform-wrapper a.selection-box,
+.smf-fotos .upload-button {
+	background: #0055a4;
+	}
+#schadenform-wrapper a.selection-box.damage-form-type.active,
+#schadenform-wrapper a.selection-box:hover,
+.smf-fotos .upload-button:hover {
+  background-color: #003382;
+}
+
+@media screen and (min-width: 44em) {
+	#kontaktblock:before {
+	background: -moz-linear-gradient(left,	rgba(255,255,255,0) 0%, #0055a4 70%, #0055a4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,	rgba(255,255,255,0) 0%, #0055a4 70%, #0055a4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,	rgba(255,255,255,0) 0%, #0055a4 70%, #0055a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000055a4', endColorstr='#0055a4',GradientType=1 ); /* IE6-9 */
+	}
+}
+@media screen and (min-width: 62em) {
+	#CollapsingNavbar {
+	background-color: transparent;
+	}
+}

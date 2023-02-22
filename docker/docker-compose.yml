@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  database:
+    build:
+      context: ./database
+    container_name: hedrich-drupal-mysql
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      # - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/data:/var/lib/mysql
+  php-fpm:
+    build:
+      context: ./php-fpm
+    container_name: hedrich-drupal-php
+    depends_on:
+      - database
+    env_file:
+      - .env
+    volumes:
+      - ../app:/var/www:delegated
+  nginx:
+    build:
+      context: ./nginx
+    container_name: hedrich-drupal-nginx
+    volumes:
+      - ../app:/var/www:delegated
+      - ./logs:/var/log
+    depends_on:
+      - php-fpm
+    ports:
+      - "80:80"
+      - "443:443"
+
+

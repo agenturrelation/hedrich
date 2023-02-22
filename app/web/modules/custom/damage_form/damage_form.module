@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains Drupal\damage_form\damage_form.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function damage_form_theme($existing, $type, $theme, $path) {
+  return [
+    'damage_form_block' => [
+      'variables' => ['data' => NULL],
+      'template' => 'damage_form_block',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_mail().
+ */
+function damage_form_mail($key, &$message, $params) {
+
+  // echo "in damage_form_mail";
+  // echo "key:" . $key;
+ //  print_r($params);
+
+  switch ($key) {
+    case 'damage_form_submission':
+
+      // Set subject.
+      $message['subject'] = $params['subject'];
+
+      // Set body.
+      $message['body'][] = $params['body'];
+
+      // Set headers.
+      if (isset($message['headers']) && isset($params['headers'])) {
+        $message['headers'] = array_merge($message['headers'], $params['headers']);
+      }
+
+      break;
+  }
+
+}

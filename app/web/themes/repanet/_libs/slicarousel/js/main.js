@@ -1,0 +1,1 @@
+$("div.the_slider").slicarousel()

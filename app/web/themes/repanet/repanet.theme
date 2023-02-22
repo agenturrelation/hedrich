@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function repanet_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['raleway'] = 'Raleway';
+}
+
+function repanet_preprocess_page(&$variables)
+{
+  // Get background-image value from node.
+  $variables['hasPageBackgroundImage'] = false;
+  $nodeEntity = \Drupal::request()->attributes->get('node');
+
+  if ($nodeEntity && $nodeEntity->id()) {
+    $bgImageFieldName = "field_hintergrundbild";
+    if ($nodeEntity->hasField($bgImageFieldName)) {
+       // dpm('has field');
+      $bgImageFieldValue = $nodeEntity->get($bgImageFieldName)->getValue();
+      if ($bgImageFieldValue && is_array($bgImageFieldValue) && count($bgImageFieldValue) > 0) {
+        // dpm ($nodeEntity->get($bgImageFieldName)->getValue(), "val");
+        // Set variable to access in page.html.twig.
+        $variables['hasPageBackgroundImage'] = true;
+      }
+    }
+  }
+
+  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+  if ($fonts)
+    $variables['#attached']['library'][] = (in_array($fonts, ['raleway']) ? 'repanet' : 'bootstrap_barrio' ) . '/' . $fonts;
+}
+
+
+function repanet_theme_suggestions_block_alter(&$suggestions, $variables) {
+  // Block suggestions for custom block bundles.
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}

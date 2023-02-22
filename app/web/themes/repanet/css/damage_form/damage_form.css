@@ -1,0 +1,690 @@
+/* BASIC STYLING
+============================================================================= */
+.modal-body {
+    padding: 0 1rem 1rem;
+}
+.modal-title {
+   margin-bottom: 0;
+   line-height: 1.5;
+   text-align: left;
+   display: block;
+   width: 100%;
+}
+.modal-content {
+  hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  -webkit-hyphens: none;
+}
+.modal-footer {
+  display: none;
+}
+.modal-open .close {
+   position: absolute;
+   right: 1rem;
+}
+.modal-open .modal {
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.modal-dialog {
+    max-width: 800px;
+}
+.icon-anfragen:before {
+  font-size: 7rem;
+  content: "\e909";
+}
+.icon-schaden:before {
+  font-size: 7rem;
+  content: "\e908";
+}
+.icon-lack,
+.icon-mechanik {
+  position: relative;
+  left: 0.2rem;
+  top: 0.7rem;
+}
+.icon-lack:before {
+  font-size: 3rem;
+  line-height: 0;
+  content: "\e90d";
+}
+.icon-mechanik:before {
+  font-size: 3rem;
+  line-height: 0;
+  content: "\e90c";
+}
+#schadenform-wrapper,
+#schadenform-wrapper .container,
+#schadenform-wrapper .form-header {
+	width: 100%;
+	max-width: 100% !important;
+}
+#schadenform-wrapper *, #schadenform-wrapper *:after, #schadenform-wrapper *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+#schadenform-wrapper h1 {
+  font-size: 2em;
+}
+#schadenform-wrapper h3 {
+  font-size: 1.4em;
+  margin: 0.3rem 0 1rem;
+}
+#schadenform-wrapper svg {
+  width: 100% !important;
+  min-height: 340px !important;
+}
+#schadenform-wrapper .row {
+  text-align: left;
+}
+#schadenform-wrapper .col-md-6 {
+  width: 48%;
+  float: left;
+}
+#schadenform-wrapper .col-xs-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.form-group {
+  position: relative;
+}
+#schadenform-wrapper .glyphicon-question-sign:after {
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  content: '?';
+  display: block;
+  font-size: 12px;
+  padding-top: 3px;
+  color: white;
+  width: 18px;
+  height: 18px;
+  background: #005971;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#schadenform-wrapper .glyphicon-question-sign:hover:after {
+  background: #999;
+}
+.smf-fotos {
+  min-height: 90px;
+}
+.smf-fotos .upload-button {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  width: 100%;
+  padding: 1.2em 15px;
+  color: white;
+  margin: 10px 0 5px !important;
+  text-align: center;
+}
+.smf-fotos input {
+  /*width: 100%;
+  background: white;
+  color: #6d6e71;
+  border: none;*/
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  z-index: 999;
+  opacity: 0;
+  cursor: pointer;
+}
+.smf-transport {
+  display: inline-block;
+  float: none;
+  clear: both;
+  width: 100%;
+  min-height: 70px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.smf-fotos .ng-pristine {
+  boder: 1px solid #aaa;
+  padding: 5px;
+  max-width: 100% !important;
+}
+#schadenform-wrapper hr {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #dadbdb;
+  margin: 20px 0;
+}
+#schadenform-wrapper a,
+#schadenform-wrapper a:link,
+#schadenform-wrapper a:active,
+#schadenform-wrapper a:visited,
+#schadenform-wrapper .glyphicon-question-sign:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+#schadenform-wrapper a:hover,
+#schadenform-wrapper .glyphicon-question-sign:hover:after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+#schadenform-wrapper input[type="file"] {
+  display: block;
+}
+#schadenform-wrapper .btn-danger {
+  width: 100%;
+}
+#schadenform-wrapper .btn:hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  background: #777;
+}
+/*.btn:after {
+    content: "&";
+    font-family: "SpiesHecker Iconfont","Arial","Helvetica",sans-serif;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: normal;
+    top: 50%;
+    right: 5px;
+    position: absolute;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: -10px;
+	}*/
+#schadenform-wrapper .form-header {
+  padding: 0 10px 0 0;
+}
+#schadenform-wrapper .navigation a {
+  position: relative;
+  background: #f5f5f5;
+  top: -1px;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dee2e6;
+  font-weight: bold;
+}
+#schadenform-wrapper .navigation a:hover {
+  text-decoration: none;
+}
+#schadenform-wrapper .navigation a.active {
+  outline: none;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #ffffff;
+  border-right-color: #dee2e6;
+  border-bottom-color: #dee2e6;
+  border-left-color: #dee2e6;
+  color: #333;
+}
+#schadenform-wrapper a.selection-box {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  color: white !important;
+  padding: 30px 0;
+  margin: 2rem 0;
+}
+#schadenform-wrapper a.selection-box span {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  text-transform: uppercase;
+}
+#schadenform-wrapper .ng-invalid-required {
+  position: relative;
+}
+#schadenform-wrapper .ng-invalid-required a.selection-box span {
+  display: inline-block;
+}
+#schadenform-wrapper a.selection-box.damage-form-type.active [class^="icon-"], #schadenform-wrapper a.selection-box.damage-form-type.active [class*=" icon-"],
+#schadenform-wrapper a.selection-box:hover [class^="icon-"], #schadenform-wrapper a.selection-box:hover [class*=" icon-"] {
+  webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+#schadenform-wrapper a.selection-box p {
+  padding: 5px 20px 0 20px;
+  color: white;
+}
+#schadenform-wrapper a.selection-box.damage-form-type.active,
+#schadenform-wrapper a.selection-box:hover {
+  text-decoration: none;
+}
+#schadenform-wrapper .form-group.postalcode {
+  width: 20%;
+  float: left;
+}
+#schadenform-wrapper .form-group.city {
+  width: 78%;
+  float: right;
+}
+#schadenform-wrapper .form-group.phone {
+  float: none;
+  clear: both;
+}
+#schadenform-wrapper .form-group {
+  margin-bottom: 15px;
+}
+#schadenform-wrapper .form-validation-message p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #f6aa26 !important;
+}
+#schadenform-wrapper .form-actions .form-action-next {
+  text-align: right;
+}
+#schadenform-wrapper fieldset {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+  padding-bottom: 20px;
+  margin-bottom: 1.5em;
+}
+#schadenform-wrapper textarea.form-control {
+  height: auto;
+  resize: none;
+}
+
+/* POP-UP
+============================================================================= */
+#schadenform-wrapper .popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 300px;
+  min-width: 220px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  line-break: auto;
+}
+#schadenform-wrapper .popover img {
+  max-width: 100%;
+}
+#schadenform-wrapper .popover.right {
+  margin-left: 40%;
+}
+#schadenform-wrapper .popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+#schadenform-wrapper .popover-content {
+  font-size: 0.8em;
+  padding: 10px;
+}
+#schadenform-wrapper .popover > .arrow,
+#schadenform-wrapper .popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+#schadenform-wrapper .popover > .arrow {
+  border-width: 11px;
+}
+#schadenform-wrapper .popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+#schadenform-wrapper .popover.right > .arrow {
+  top: 55%;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+  border-right-width: 0;
+}
+#schadenform-wrapper .popover.right > .arrow:after {
+  bottom: -10px;
+  right: 1px;
+  content: " ";
+  border-left-color: #fff;
+  border-right-width: 0;
+}
+#schadenform-wrapper .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+#schadenform-wrapper .fade.in {
+  opacity: 1;
+}
+
+
+/* ANIMATION STYLING
+============================================================================= */
+#schaden-form {
+  position: relative;
+  min-height: 380px;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0 0;
+}
+#form-views {
+  width: auto;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+#form-views.ng-enter,
+#form-views.ng-leave {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+}
+
+/* enter animation */
+#form-views.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease;
+  -moz-animation: slideInRight 0.5s both ease;
+  animation: slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+#form-views.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease;
+  -moz-animation: slideOutLeft 0.5s both ease;
+  animation: slideOutLeft 0.5s both ease;
+}
+
+/* KFZ MAP
+============================================================================= */
+.kfz-metall,
+.kfz-glas,
+.kfz-darkmetall {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+[id^="kfz-"]:hover circle, [id*=" kfz-"]:hover circle,
+[id^="kfz-"]:hover .kfz-circle, [id*=" kfz-"]:hover .kfz-circle,
+.car-image a.active circle,
+.car-image a.active .kfz-circle {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #f6aa26;
+}
+[id^="kfz-"]:hover .kfz-metall, [id*=" kfz-"]:hover .kfz-metall {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #bbb;
+}
+.car-image a.active g path.kfz-metall {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #aaa;
+}
+[id^="kfz-"]:hover .kfz-glas, [id*=" kfz-"]:hover .kfz-glas {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #9fc9e3;
+}
+.car-image a.active g path.kfz-glas {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #8ab3cd;
+}
+[id^="kfz-"]:hover .kfz-darkmetall, [id*=" kfz-"]:hover .kfz-darkmetall {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #666;
+}
+.car-image a.active g path.kfz-darkmetall {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  fill: #555;
+}
+@media (max-width: 800px) {
+  svg {
+    min-height: auto !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #schaden-form {
+    min-height: 100px;
+  }
+  #schadenform-wrapper .form-header {
+    padding: 0;
+  }
+  #schadenform-wrapper .navigation a {
+    text-align: left;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+  }
+  .popover p {
+    font-size: 11px !important;
+  }
+  #schadenform-wrapper .popover.right {
+    margin-left: 0%;
+  }
+#schadenform-wrapper a.selection-box {
+    margin: 0;
+  }
+  #schadenform-wrapper .col-md-6 {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+    float: none !important;
+	padding: 0;
+  }
+  #schadenform-wrapper .btn {
+    width: 100%;
+    min-width: 120px;
+    padding: 15px;
+  }
+  .form-control {
+    padding: 6px 8px;
+  }
+  #schadenform-wrapper svg {
+    min-height: 270px !important;
+  }
+  #form-begin {
+    height: 30px;
+  }
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+/* Disabled Submit Button */
+button.disabled,
+.form-action-next button[disabled=disabled],
+.form-action-next button:disabled {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  cursor: inherit;
+}
+
+/* Image upload progress */
+.upload-progress {
+  width: 100%;
+  background: white;
+}
+.upload-progress > span {
+  display: block;
+  text-align: left;
+  background-color: #005971;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  color: white;
+}
+.upload-progress-info,
+.upload-progress-err {
+  display: block;
+  font-size: 0.8em;
+  padding: 0.25em 0.5em 0.25em 50px;
+  position: absolute;
+  margin-top: -24px;
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+.upload-progress-err {
+  color: #f6aa26;
+}

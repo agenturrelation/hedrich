@@ -1,0 +1,57 @@
+<!-- form-contact-data.part.html -->
+
+<div class="form-group">
+    <input type="text" class="form-control" name="firstname" placeholder="Vorname *" ng-model="formData.contactData.firstname" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.firstname.$error"
+         ng-if="showValidationMessage(schadenForm.firstname)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" name="lastname" placeholder="Nachname *" ng-model="formData.contactData.lastname" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.lastname.$error"
+         ng-if="showValidationMessage(schadenForm.lastname)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" name="street" placeholder="Str./Nr. *" ng-model="formData.contactData.street" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.street.$error"
+         ng-if="showValidationMessage(schadenForm.street)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group postalcode">
+    <input type="text" class="form-control" name="postalcode" placeholder="PLZ *" ng-model="formData.contactData.postalcode" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.postalcode.$error"
+         ng-if="showValidationMessage(schadenForm.postalcode)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group city clearfix">
+    <input type="text" class="form-control" name="city" placeholder="Ort *" ng-model="formData.contactData.city" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.city.$error"
+         ng-if="showValidationMessage(schadenForm.city)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group phone">
+    <input type="text" class="form-control" name="phone" placeholder="Telefon *" ng-model="formData.contactData.phone" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.phone.$error"
+         ng-if="showValidationMessage(schadenForm.phone)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>
+
+<div class="form-group">
+    <input type="email" class="form-control" name="email" placeholder="E-Mail *" ng-model="formData.contactData.email" required>
+    <div class="form-validation-message"
+         ng-messages="schadenForm.email.$error"
+         ng-if="showValidationMessage(schadenForm.email)"
+         ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+</div>

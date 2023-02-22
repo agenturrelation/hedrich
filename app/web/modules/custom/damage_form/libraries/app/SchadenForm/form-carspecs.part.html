@@ -1,0 +1,85 @@
+<!-- form-car-specs.part.html -->
+
+<fieldset class="carspecs">
+	<h3>Fahrzeugdaten</h3>
+    <div class="form-group">
+        <input type="text" class="form-control" name="manufacturer" placeholder="Hersteller *" ng-model="formData.damage.carSpecs.manufacturer" ng-required="isCarspecsFieldRequired()">
+        <div class="form-validation-message"
+             ng-messages="schadenForm.manufacturer.$error"
+             ng-if="showValidationMessage(schadenForm.manufacturer)"
+             ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="model" placeholder="Modell *" ng-model="formData.damage.carSpecs.model" ng-required="isCarspecsFieldRequired()">
+        <div class="form-validation-message"
+             ng-messages="schadenForm.model.$error"
+             ng-if="showValidationMessage(schadenForm.model)"
+             ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+    </div>
+
+    <div class="form-group">
+
+        <span class="glyphicon glyphicon-question-sign" aria-hidden="true" popover-template="'popoverErstzulassung.html'" popover-title="Erstzulassung" popover-trigger="mouseenter" popover-placement="right"></span>
+        <script type="text/ng-template" id="popoverErstzulassung.html">
+            <img ng-src="{{pluginBase}}app/SchadenForm/assets/images/popovers/erstzulassung.png" width="300" height="156" class="img-responsive"/>
+            <p>Mit Erstzulassung (oder auch Tag der ersten Zulassung) wird das Datum bezeichnet, an dem ein Kraftfahrzeug zum ersten Mal von einem Besitzer bei einer Kfz-Zulassungsstelle angemeldet wird. In Deutschland
+                wird das Datum der Erstzulassung im Teil I der Zulassungsbescheinigung (Fahrzeugschein) unter Position B angegeben.<br/>Quelle: Wikipedia</p>
+        </script>
+
+        <input type="text" class="form-control" name="registration_date" placeholder="Erstzulassung *" ng-model="formData.damage.carSpecs.registrationDate" ng-required="isCarspecsFieldRequired()">
+        <div class="form-validation-message"
+             ng-messages="schadenForm.registration_date.$error"
+             ng-if="showValidationMessage(schadenForm.registration_date)"
+             ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="mileage" placeholder="Kilometerstand *" ng-model="formData.damage.carSpecs.mileage" ng-required="isCarspecsFieldRequired()">
+        <div class="form-validation-message"
+             ng-messages="schadenForm.mileage.$error"
+             ng-if="showValidationMessage(schadenForm.mileage)"
+             ng-messages-include="{{pluginBase}}/app/SchadenForm/messages.html"></div>
+    </div>
+
+    <p style="text-align:center">Gerne können Sie weitere <span style="text-decoration: underline; cursor: pointer" ng-click="toggleCarspecsAdditionalFieldset()">Angaben</span> zu Ihrem Fahrzeug machen</p>
+
+    <fieldset class="carspecs-additional" ng-show="showCarspecsAdditionalFieldset">
+
+        <div class="form-group">
+
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true" popover-template="'popoverSchluesselnummer2.html'" popover-title="Schlüsselnummer 2" popover-trigger="mouseenter" popover-placement="right"></span>
+            <script type="text/ng-template" id="popoverSchluesselnummer2.html">
+                <img ng-src="{{pluginBase}}app/SchadenForm/assets/images/popovers/schluesselnr2.png" width="300" height="156" class="img-responsive"/>
+                <p>Die Schlüsselnummer im Fahrzeugschein und -brief gibt Typ und Klasse eines Fahrzeugs an. Die Kfz Schlüsselnummer dient der exakten Fahrzeugbestimmung und ist sowohl im Fahrzeugschein als auch im Kfz Brief
+                    eingetragen. Dabei ist die erste Kfz Schlüsselnummer die Herstellernummer, für jeden Fahrzeughersteller sind feste Nummern reserviert und die zweite Kfz Schlüsselnummer wird auch Typenschlüsselnummer genannt,
+                    weil mit ihr der Fahrzeugtyp identifiziert werden kann, also das genaue Fahrzeugmodell.<br/>Quelle: Wikipedia</p>
+            </script>
+            <input type="text" class="form-control" name="model_code_2" placeholder="Schlüsselnummer 2" ng-model="formData.damage.carSpecs.modelCode2">
+        </div>
+
+        <div class="form-group">
+
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true" popover-template="'popoverSchluesselnummer3.html'" popover-title="Schlüsselnummer 3" popover-trigger="mouseenter" popover-placement="right"></span>
+            <script type="text/ng-template" id="popoverSchluesselnummer3.html">
+                <img ng-src="{{pluginBase}}app/SchadenForm/assets/images/popovers/schluesselnr3.png" width="300" height="156" class="img-responsive"/>
+                <p>Die Schlüsselnummer im Fahrzeugschein und -brief gibt Typ und Klasse eines Fahrzeugs an. Die Kfz Schlüsselnummer dient der exakten Fahrzeugbestimmung und ist sowohl im Fahrzeugschein als auch im Kfz Brief
+                    eingetragen. Dabei ist die erste Kfz Schlüsselnummer die Herstellernummer, für jeden Fahrzeughersteller sind feste Nummern reserviert und die zweite Kfz Schlüsselnummer wird auch Typenschlüsselnummer genannt,
+                    weil mit ihr der Fahrzeugtyp identifiziert werden kann, also das genaue Fahrzeugmodell.<br/>Quelle: Wikipedia</p>
+            </script>
+            <input type="text" class="form-control" name="model_code_3" placeholder="Schlüsselnummer 3" ng-model="formData.damage.carSpecs.modelCode3">
+        </div>
+
+        <div class="form-group">
+
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true" popover-template="'popoverFahrgestellnummer.html'" popover-title="Fahrgestellnummer" popover-trigger="mouseenter" popover-placement="right"></span>
+            <script type="text/ng-template" id="popoverFahrgestellnummer.html">
+                <img ng-src="{{pluginBase}}app/SchadenForm/assets/images/popovers/fahrgestellnr.png" width="300" height="156" class="img-responsive"/>
+                <p>Die Fahrgestellnummer ist eine eindeutige Seriennummer eines Autos. Über die Fahrgestellnummer kann beispielsweise der Fahrzeughalter ermittelt werden. Die Nummer befindet sich an drei Stellen im Fahrzeug.
+                    Zum einen meistens im Motorraum eingestanzt, dann am Trittblech neben dem Beifahrersitz zbd im Kofferraum.<br/>Quelle: Wikipedia</p>
+            </script>
+            <input type="text" class="form-control" name="vehicle_ident_no" placeholder="Fahrgestellnummer" ng-model="formData.damage.carSpecs.vehicleIdentNo">
+        </div>
+
+    </fieldset>
+</fieldset>

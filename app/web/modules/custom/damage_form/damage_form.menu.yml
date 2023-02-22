@@ -1,0 +1,6 @@
+damage_form.admin:
+  title: 'Damage form module settings'
+  description: 'Change settings for Damage Form'
+  parent: system.admin_config_development
+  route_name: damage_form.content
+  weight: 100

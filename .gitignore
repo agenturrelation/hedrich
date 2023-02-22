@@ -1,0 +1,50 @@
+
+# Drupal
+app/vendor
+app/web/core
+app/web/.env
+app/web/modules/contrib
+app/web/sites/*/files
+app/web/sites/*/private
+app/web/sites/simpletest
+app/web/.csslintrc
+app/web/.eslintignore
+app/web/.eslintrc.json
+app/web/.ht.router.php
+app/web/autoload.php
+app/web/example.gitignore
+app/web/index.php
+app/web/INSTALL.txt
+app/web/README.md
+app/web/README.txt
+app/web/update.php
+app/web/web.config
+
+# Libraries
+/app/web/libraries
+
+# Drupal Theme
+app/web/themes/contrib
+
+# IDE - PHP Storm
+/.idea/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker/.env
+docker/database/data/
+docker/logs
+docker/docker-commands.txt
+
+# Local development
+/_old

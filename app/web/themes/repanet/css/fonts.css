@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'repanet';
+  src:  url('../fonts/repanet.eot?u85s1e');
+  src:  url('../fonts/repanet.eot?u85s1e#iefix') format('embedded-opentype'),
+    url('../fonts/repanet.ttf?u85s1e') format('truetype'),
+    url('../fonts/repanet.woff?u85s1e') format('woff'),
+    url('../fonts/repanet.svg?u85s1e#repanet') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'repanet' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-repanet_icon_alarm:before {
+  content: "\e900";
+}
+.icon-repanet_icon_arrow-bottom:before {
+  content: "\e901";
+}
+.icon-repanet_icon_arrow-left:before {
+  content: "\e902";
+}
+.icon-repanet_icon_arrow-right:before {
+  content: "\e903";
+}
+.icon-repanet_icon_arrow-top:before {
+  content: "\e904";
+}
+.icon-repanet_icon_calender:before {
+  content: "\e905";
+}
+.icon-repanet_icon_car:before {
+  content: "\e906";
+}
+.icon-repanet_icon_clock:before {
+  content: "\e907";
+}
+.icon-repanet_icon_crash:before {
+  content: "\e908";
+}
+.icon-repanet_icon_dialog:before {
+  content: "\e909";
+}
+.icon-repanet_icon_form:before {
+  content: "\e90a";
+}
+.icon-repanet_icon_marker:before {
+  content: "\e90b";
+}
+.icon-repanet_icon_mechanics:before {
+  content: "\e90c";
+}
+.icon-repanet_icon_paint:before {
+  content: "\e90d";
+}
+.icon-repanet_icon_phone:before {
+  content: "\e90e";
+}
+.icon-repanet_icon_pickup:before {
+  content: "\e90f";
+}
+.icon-repanet_icon_search:before {
+  content: "\e910";
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body, p, a, li {
+    font-family: 'Raleway', sans-serif;
+}
+b, strong {
+  font-weight: 600;
+}

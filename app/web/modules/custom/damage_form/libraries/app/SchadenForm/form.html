@@ -1,0 +1,22 @@
+<!-- form.html -->
+
+<div class="container">
+	<div class="row">
+        <div class="form-header text-center">
+            <div class="navigation" class="text-center">
+                <a ui-sref-active="active" ui-sref=".selection" ng-class="{active: currentState === 'form'}">Hauptmenü</a>
+                <a ui-sref-active="active" ui-sref=".damage">Reparaturanfragen</a>
+                <a ui-sref-active="active" ui-sref=".request">Allgemeine Anfragen</a>
+            </div>
+        </div>
+
+        <form name="schadenForm" id="schaden-form" ng-submit="submitForm(schadenForm.$valid)" method="post"
+            enctype="multipart/form-data" novalidate>
+            <ng-include
+              ng-if="currentState === 'form'"
+              src="getTemplateUrl('app/SchadenForm/form-selection.html')">
+            </ng-include>
+            <div id="form-views" ui-view></div>
+        </form>
+	</div>
+</div>

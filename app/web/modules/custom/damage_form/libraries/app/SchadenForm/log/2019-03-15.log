@@ -1,0 +1,8 @@
+
+15.03.2019 15:46:05	2003:e1:e3e2:c010:9c21:a6aa:f9f3:680	hxsrlxv8ceawq6awnkbuknt2afd5xift0na0	::validateGarageIdentifier	Error on validation webservice, status code: 404, Body: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /identica/kleinschaden/ws/restapi/identica_garage/hxsrlxv8ceawq6awnkbuknt2afd5xift0na0 was not found on this server.</p>
+</body></html>

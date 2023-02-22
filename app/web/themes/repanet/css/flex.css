@@ -1,0 +1,77 @@
+﻿
+/* ==============================================================================================================
+F L E X B O X  G R I D  S Y S T E M
+-------------------------------------------------------------------------------------------------------------- */
+[class^="flex-"] {
+	width: auto;
+	max-width: 100%;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	
+	/* Elementanordnung */
+	-webkit-flex-direction: row;
+	flex-direction: row /*row | row-reverse | column | column-reverse*/;
+	}
+	
+[class^="flex-"][class*="left"] {
+	/* Horizontale Ausrichtung */
+	-webkit-box-pack: flex-start;
+	-ms-flex-pack: flex-start;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	}
+[class^="flex-"][class*="center"] {
+	/* Horizontale Ausrichtung */
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	}
+[class^="flex-"][class*="right"] {
+	/* Horizontale Ausrichtung */
+	-webkit-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	}
+[class^="flex-"][class*="between"] {
+	/* Horizontale Ausrichtung */
+	-webkit-box-pack: space-between;
+	-ms-flex-pack: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	}
+[class^="flex-"][class*="around"] {
+	/* Horizontale Ausrichtung */
+	-webkit-box-pack: space-around;
+	-ms-flex-pack: space-around;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	}
+	
+[class^="flex-"][class*="top"] {	
+	/* Vertikale Ausrichtung */
+	-webkit-box-align: flex-start;
+	-ms-flex-align: flex-start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	}
+[class^="flex-"][class*="middle"] {	
+	/* Vertikale Ausrichtung */
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	}
+[class^="flex-"][class*="bottom"] {	
+	/* Vertikale Ausrichtung */
+	-webkit-box-align: flex-end;
+	-ms-flex-align: flex-end;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	}

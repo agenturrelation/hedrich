@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Repanet Google Maps Opt-In</title>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;700;800&display=swap');
+
+	body {
+		font: 1em/1.7em 'Raleway', Helvetica, Arial, sans-serif;
+	}
+
+	.gmap-disclaimer {
+		background: url('images/google-map.jpg') no-repeat center center;
+		display: block;
+		width: 100%;
+		height: 100vh;
+		position: relative;
+	}
+
+	.gmap-disclaimer .content-wrapper {
+		position: absolute;
+		color: #565656;
+		top: 51%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 90%;
+		max-width: 900px;
+		z-index: 99;
+	}
+
+	#gmap-activator {
+		cursor: pointer;
+		display: inline-block;
+		margin: auto;
+		text-align: center;
+		background: #888;
+		border: none;
+		padding: 15px 35px;
+		color: white;
+		font: 1em/1.7em 'Raleway', Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+
+	#gmap-activator:hover {
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		transition: all 0.3s;
+		background: #555;
+	}
+
+	a {
+		color: #d00;
+	}
+</style>
+
+<body style="padding:0;display: block;margin:0;">
+	<div class="gmap-disclaimer">
+		<div class="content-wrapper">
+			<p>Diese Webseite verwendet Google Maps um Kartenmaterial einzubinden. Bitte beachten Sie, dass hierbei Ihre
+				persönlichen Daten erfasst und gesammelt werden können. Um die Google Maps Karte zu sehen, stimmen Sie
+				bitte zu, dass diese vom Google-Server geladen wird. Weitere Informationen finden sie <a
+					href="https://policies.google.com/privacy?hl=de" target="_blank">HIER</a>.</p>
+			<a id="gmap-activator" href="gmap-autoservice.html">Google Maps aktivieren</a>
+		</div>
+	</div>
+</body>
+
+</html>

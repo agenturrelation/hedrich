@@ -1,0 +1,23 @@
+damage_form.settings:
+  path: '/admin/config/damage_form'
+  defaults:
+    _form: '\Drupal\damage_form\Form\ModuleConfigurationForm'
+    _title: 'Damage Form Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+damage_form.upload_image:
+  path: '/damage_form/upload_image'
+  defaults:
+    _controller: '\Drupal\damage_form\Controller\UploadImageController::content'
+  methods: [ GET, POST ]
+  requirements:
+    _permission: 'access content'
+
+damage_form.submit:
+  path: '/damage_form/submit'
+  defaults:
+    _controller: '\Drupal\damage_form\Controller\SubmitController::content'
+  methods: [ GET, POST ]
+  requirements:
+    _permission: 'access content'
