@@ -2,6 +2,197 @@
 @import url(damage_form/damage_form.css);
 @import url(fonts.css);
 
+
+/* ---------- Color Module Styles ----------- */
+.splide__arrows button {
+    background: #351788;
+    z-index: 10;
+}
+body {
+	color: #333333;
+	background: #fefefe;
+	}
+.site-footer fieldset input {
+	color: #333333;
+	}
+#page,
+#main-wrapper,
+.region-primary-menu .menu-item a.is-active,
+.region-primary-menu .menu-item--active-trail a {
+	background: #fefefe;
+	}
+.tabs ul.primary li a.is-active {
+	background-color: #fefefe;
+	}
+
+.tabs ul.primary li.is-active a {
+	background-color: #fefefe;
+	border-bottom-color: #fefefe;
+	}
+.navbar-brand {
+	background: #ffffff;
+	}
+#baaaccktotop::before {
+	color: #ffffff;
+	}
+#page a,
+.link,
+.site-footer .navbar-nav a,
+.block-views-blockansprechpartner-block-1 h5,
+#schadenform-wrapper h1 {
+	color: #3720a4;
+	text-decoration: none !important;
+	}
+#schadenform-wrapper circle,
+#schadenform-wrapper .kfz-circle {
+	fill: #c31924 !important;
+	}
+#schadenform-wrapper .active circle,
+#schadenform-wrapper .active .kfz-circle {
+	fill: #96141d !important;
+	}
+a:hover,
+a:focus,
+.link:hover,
+.link:focus,
+.site-footer .navbar-nav a:hover {
+	text-decoration: none;
+	color: #c31924;
+	}
+.dropdown-menu a.active,
+.dropdown-menu a.is-active,
+.dropdown-menu li.active > a,
+.dropdown-menu li.active > a  {
+	text-decoration: none;
+	color: #c31924 !important;
+	}
+
+a:active,
+.link:active {
+	color: #c31924;
+	}
+
+.page-item.active .page-link {
+	background-color: #0070b3;
+	border-color: #0070b3;
+	}
+.services span,
+.highlighted h2,
+.services h4,
+.site-footer__top [class^="icon-"], .site-footer__top [class*=" icon-"] {
+	color: #351788;
+	}
+
+.page-link,
+.page-link:hover {
+	color: #0070b3;
+	}
+#main #search-block-form, #search-form,
+.sidebar .block {
+	background-color: #eeeeee;
+	border-color: #cccccc;
+	}
+#baaaccktotop,
+.btn-primary,
+#schadenform-wrapper .btn-danger {
+	color: white !important;
+	background-color: #351788 !important;
+	border-color: #351788 !important;
+	}
+#baaaccktotop:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+#schadenform-wrapper .btn-danger:hover {
+	color: white !important;
+	background-color: #290e74 !important;
+	border-color: #290e74 !important;
+	}
+.btn-secondary,
+#kontaktblock .btn-primary {
+	color: white !important;
+	background-color: #c31924 !important;
+	border-color: #c31924 !important;
+	}
+.btn-secondary:hover,
+.btn-secondary:focus,
+#kontaktblock .btn-primary:hover,
+#kontaktblock .btn-primary:focus {
+	background-color: #96141d;
+	border-color: #96141d;
+	}
+#schadenform-wrapper .btn-info {
+	background-color: #333333;
+	border-color: #333333;
+	}
+#header {
+	background: #351788;
+	}
+.site-footer {
+	background: #eaeaea;
+	}
+
+.region-header,
+.region-header a,
+.region-header li a.is-active,
+.region-header .site-branding__text,
+.region-header .site-branding,
+.region-header .site-branding__text a,
+.region-header .site-branding a,
+.region-secondary-menu .menu-item a,
+.region-secondary-menu .menu-item a.is-active {
+	color: #fffefe;
+	}
+
+#main-wrapper .node__content ul li:before {
+	color: #c31924;
+}
+
+/* ---------- Color Form ----------- */
+
+[dir="rtl"] .color-form .color-palette {
+	margin-left: 0;
+	margin-right: 20px;
+	}
+
+[dir="rtl"] .color-form .form-item label {
+	float: right;
+	}
+
+[dir="rtl"] .color-form .color-palette .lock {
+	right: -20px;
+	left: 0;
+	}
+
+
+#CollapsingNavbar,
+primary-background,
+#block-highlightedfront:before,
+.routenplaner,
+#kontaktblock:before,
+#schadenform-wrapper a.selection-box,
+.smf-fotos .upload-button {
+	background: #351788;
+	}
+#schadenform-wrapper a.selection-box.damage-form-type.active,
+#schadenform-wrapper a.selection-box:hover,
+.smf-fotos .upload-button:hover {
+  background-color: #290e74;
+}
+
+@media screen and (min-width: 44em) {
+	#kontaktblock:before {
+	background: -moz-linear-gradient(left,	rgba(255,255,255,0) 0%, #351788 70%, #351788 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,	rgba(255,255,255,0) 0%, #351788 70%, #351788 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,	rgba(255,255,255,0) 0%, #351788 70%, #351788 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000055a4', endColorstr='#351788',GradientType=1 ); /* IE6-9 */
+	}
+}
+@media screen and (min-width: 62em) {
+	#CollapsingNavbar {
+	background-color: transparent;
+	}
+}
+
 /**
  * @file
  * Subtheme specific CSS.
@@ -10,6 +201,34 @@
 /* ==============================================================================================================
 E U   C O O K I E   C O M P L I E N E S
 -------------------------------------------------------------------------------------------------------------- */
+.cookiesjsr-banner {
+	align-items: center;
+	background-color: #290e74;
+}
+.cookiesjsr-banner a {
+	color: white !important;
+}
+.cookiesjsr-banner button.denyAll {
+	font-weight: 900 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 1px !important;
+	display: inline-block;
+	border: none;
+	background-color: #aaa !important;
+	color: white !important;
+  }
+.cookiesjsr-banner button.allowAll {
+	font-weight: 900 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 1px !important;
+	display: inline-block;
+	border: none;
+	background-color: #c31924 !important;
+	color: white !important;
+  }
+.cookiesjsr-banner--text {
+	font-size: 80%;
+}
 #cookieNotice {
 	/*position: fixed;
 	background-color: rgba(0,0,0,0.7);
@@ -338,24 +557,28 @@ header #search-block-form {
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-	padding: 1em;
+	padding: 1em !important;
 	opacity: 0;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	display: block;
 }
 .navbar {
-	background: rgb(99, 99, 99, 0.3) !important;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(99, 99, 99, 0.6) 100%) !important;
-	padding: 0 5vw;
+	padding: 0 5vw !important;
 }
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 #header .nav-link {
+	color: white !important;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 #header .nav-link:hover {
 	text-shadow: none;
 }
+.small, small {
+	font-size: 80% !important;
+	font-weight: 400 !important;
+  }
 
 /* ==============================================================================================================
 S E A R C H B L O C K
